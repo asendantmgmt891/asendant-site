@@ -307,9 +307,7 @@ function LinksPage() {
     <section className="links-page">
       <div className="links-hero">
         <div>
-          <div className="pill accent">Client resources</div>
-          <h1>Useful links, all in one place.</h1>
-          <p className="hero-copy">Quick access to the accounting, payroll, and tax resources you use most. Need a hand? We&apos;re only a message away.</p>
+          <h1>Links</h1>
         </div>
         <a className="portal-card" href="https://accountency.securefilepro.com/portal/#/login" target="_blank" rel="noreferrer">
           <span className="portal-card-kicker">Secure access</span>
