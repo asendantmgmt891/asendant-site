@@ -414,7 +414,7 @@ h3 {
 
 .dashboard-card {
   padding: 24px;
-  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  background: #f4f5f7;
 }
 
 .dashboard-card-link {
