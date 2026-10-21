@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-05-06T13:24:46.089Z",
+  "sourceDirectory": "../skills",
+  "skills": [
+    {
+      "slug": "prepare-amortization-schedule",
+      "name": "Amortization Schedule Preparation",
+      "description": "Prepare TValue-style loan amortization schedules with monthly nominal rates, 365-day year irregular first-period interest, year totals, grand totals, APR/finance-charge disclosure summary, and rounding adjustments. Use when preparing or checking vehicle/equipment loan amortization schedules, especially from loan date, rate, payment amount, down payment/trade-in, term, and first payment date.",
+      "category": "Accounting automation",
+      "status": "live",
+      "tags": [
+        "amortization",
+        "TValue",
+        "loans"
+      ],
+      "source": "../skills/prepare-amortization-schedule/SKILL.md"
+    },
+    {
+      "slug": "convert-scanned-forms-fillable-pdf",
+      "name": "Fillable PDF Form Conversion",
+      "description": "Convert scanned or image-based PDF forms into precisely aligned fillable PDFs with text fields and checkboxes. Use when a user asks to make a scanned PDF form fillable, overlay AcroForm fields on a non-fillable form, add editable text fields and checkboxes to an existing form, or correct field alignment on a fillable PDF derived from a scan.",
+      "category": "Document automation",
+      "status": "live",
+      "tags": [
+        "pdf",
+        "forms",
+        "fillable"
+      ],
+      "source": "../skills/convert-scanned-forms-fillable-pdf/SKILL.md"
+    },
+    {
+      "slug": "xero-bank-statement-import",
+      "name": "Xero Bank Statement Import",
+      "description": "Convert bank statement PDFs into Xero CSV imports that exactly match the user's template, reconcile each month, and emit monthly, combined, and reconciliation outputs. Use when a user provides bank statement PDFs plus a Xero import template and wants transaction extraction, monthly CSVs, a combined CSV, and a reconciliation report.",
+      "category": "Accounting automation",
+      "status": "live",
+      "tags": [
+        "xero",
+        "bank statements",
+        "csv",
+        "reconciliation"
+      ],
+      "source": "../skills/xero-bank-statement-import/SKILL.md"
+    },
+    {
+      "slug": "xero-credit-card-import",
+      "name": "Xero Credit Card Import",
+      "description": "Extract credit card statement PDFs into Xero-ready bank statement CSVs and reconciliation reports. Use when a user provides statement PDFs plus a Xero import template and wants clean monthly CSVs, a combined CSV, and a month-by-month reconciliation summary.",
+      "category": "Accounting automation",
+      "status": "live",
+      "tags": [
+        "xero",
+        "credit cards",
+        "csv",
+        "reconciliation"
+      ],
+      "source": "../skills/xero-credit-card-import/SKILL.md"
+    }
+  ]
+}
