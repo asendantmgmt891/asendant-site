@@ -1,11 +1,9 @@
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom'
-import skillsData from './data/skills.json'
 
 const navItems = [
   { to: '/', label: 'Accounting', end: true },
   { to: '/taxes', label: 'Taxes' },
   { to: '/services', label: 'Services' },
-  { to: '/bots', label: 'Bots' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -247,50 +245,6 @@ function ServicesPage() {
   )
 }
 
-function BotsPage() {
-  const skillsByCategory = skillsData.skills.reduce((groups, skill) => {
-    const category = skill.category || 'Automation'
-    groups[category] = groups[category] || []
-    groups[category].push(skill)
-    return groups
-  }, {})
-
-  return (
-    <section className="page-hero narrow bots-page">
-      <div className="pill accent">Bots & skills</div>
-      <h1>Practical automations for the work behind the numbers</h1>
-      <p className="hero-copy">
-        These are the live skills our OpenClaw bots can use for accounting, document, and workflow support. The list is generated from the shared skills folder so new public skills can appear here automatically.
-      </p>
-
-      {Object.entries(skillsByCategory).map(([category, skills]) => (
-        <section key={category} className="bot-skill-section">
-          <div className="section-intro compact">
-            <span className="eyebrow">{category}</span>
-            <h2>{category} skills</h2>
-          </div>
-          <div className="card-grid two-up bot-skill-grid">
-            {skills.map((skill) => (
-              <article key={skill.slug} className="info-card bot-skill-card">
-                <div className="bot-skill-card-head">
-                  <h3>{skill.name}</h3>
-                  <span className="status-badge">{skill.status}</span>
-                </div>
-                <p>{skill.description}</p>
-                {skill.tags.length ? (
-                  <div className="tag-list">
-                    {skill.tags.map((tag) => <span key={tag}>{tag}</span>)}
-                  </div>
-                ) : null}
-              </article>
-            ))}
-          </div>
-        </section>
-      ))}
-    </section>
-  )
-}
-
 function ContactPage() {
   return (
     <section className="page-hero narrow">
@@ -328,7 +282,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/taxes" element={<TaxesPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/bots" element={<BotsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
