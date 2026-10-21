@@ -25,13 +25,13 @@ function Layout({ children }) {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <NavLink to="/" className="brand-mark" aria-label="BoringAccountants.com home">
+        <NavLink to="/" className="brand-mark" aria-label="Asendant.com home">
           <img src="/images/boring-accountants-people-header.png" alt="Boring Accountants illustration" />
         </NavLink>
-        <div className="brand-copy">
+        <NavLink to="/" className="brand-copy" aria-label="Asendant.com home">
           <span>Asendant.com</span>
           <small>We make accounting (and taxes) boring</small>
-        </div>
+        </NavLink>
         <nav className="top-nav">
           {navItems.map((item) => (
             <NavLink
@@ -284,8 +284,8 @@ function ContactPage() {
           <input name="email" type="email" placeholder="you@business.com" />
         </label>
         <label>
-          Phone <span aria-hidden="true">*</span>
-          <input name="phone" type="tel" placeholder="Your phone number" autoComplete="tel" required />
+          <span>Phone <span aria-hidden="true">*</span></span>
+          <input name="phone" type="tel" placeholder="5551234567" autoComplete="tel" inputMode="numeric" pattern="[0-9]{10}" minLength="10" maxLength="10" title="Enter a 10-digit phone number." required />
         </label>
         <label>
           Business / Role
